@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Mes CSS -->
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/admin.css">
+    <link rel="stylesheet" href="../css/evenements.css">
+    <link rel="stylesheet" href="../css/index.css">
+
+    <!-- Les icons -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+  <!-- BOOTSTRAP -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+   <!-- Firebase -->
+   <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js" defer></script>
+   <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js" defer></script>
+   <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js" defer></script>
+
+    <!-- Le JS -->
+    <script src="../js/admin.js" type="module" defer></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
+    <title>SVR-admin</title>
+      
+</head>
+<body>
+  <div id="admin-off" style="display: none;">
+    <div class="login_form">
+      <form id="login_form" class="card-body row g-0 px-5 py-4 position-relative needs-validation" novalidate>
+        <h3 class="card-title mb-3">Connectez vous</h3>
+
+        <h6 class="card-subtitle text-muted mb-3">Page réservée à l'administrateur</h6>
+
+        <div class="form-floating col-12 mb-3">
+            <input type="email" class="form-control" id="login" placeholder="Votre adresse E-mail" required>
+            <label for="Email_login">Adresse E-mail</label>
+        </div>
+
+        <div class="form-floating col-12 mb-3">
+            <input type="password" class="form-control" id="password" placeholder="Votre mot-de-passe">
+            <label for="Password_login">Mot de Passe</label>
+        </div>
+
+        <button id="login_btn" type="submit" class="btn btn-primary my-2">Connexion</button>
+    </form>
+    </div>
+  </div>
+
+  <div id="admin-on" style="display: none;">
+    <nav>
+      <div class="topnav" id="myTopnav">
+        <a href="../index.html" class="active">SVR</a>
+        <a href="./evenements.html">Evenements</a>
+        <a id="logoutBtn" class="boton" style="background-color: red; cursor: pointer;">Déconnexion</a>
+        <a class="boton" href="#vmodal">Ajouter un événement</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </nav>
+
+    <div class="box" style="overflow-x:auto;">
+      <table id="concert">
+        <tr>
+          <th>Date</th>
+          <th>Pays</th>
+          <th>Ville</th>
+          <th>Place</th>
+          <th>Places de concert</th>
+          <th></th>
+          
+        </tr>
+        <tr>
+          <td class="date">28/12/2012</td>
+          <td class="ville">Paris</td>
+          <td class="lieu">Stade de France</td>
+          <td>Disponible</td>
+          <td>
+            <button class="delete-btn"><i class="fas fa-trash-alt"></i>Supprimer</button>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Formulaire -->
+    <div class="body-page">
+      </div>
+      <div id="vmodal">
+        <a class="cerrar" href="#cerrar">X</a>
+        <div class="container">
+          <form id="formulaire">
+            <div class="row">
+              <div class="col-25">
+                <label for="fname">La date</label>
+              </div>
+              <div class="col-75">
+                <input type="date" id="date" name="firstname"required>
+              </div>
+            </div>
+            <div class="row">
+              <!-- <div class="col-25">
+                <label for="lname">Le pays</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="pays" name="lastname" required>
+              </div> -->
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="lname">La Ville</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="ville" name="lastname" required>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="lname">La Salle</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="salle" name="lastname" required>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-25">
+                <label for="country">Tickets</label>
+              </div>
+              <div class="col-75">
+                <select id="tickets" name="tickets">
+                  <option value="Tickets en vente">Tickets en vente</option>
+                  <option value="Guichets fermés">Guichets fermés</option>
+                </select>
+              </div>
+            </div>
+            <div class="row">
+              <input type="submit" value="Submit">
+            </div>
+          </form>
+        </div>
+      </div>
+  </div>
+</body>
+      
+      
+</html>

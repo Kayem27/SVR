@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <!--  les métas -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="Un site internet évènementiel pour l’album commun SVR de Kaaris et Kalash Criminel. SVR est un diminutif de SEVRAN, ville du 93. SVR tour : Tournée dans toute la France. Place de concert Kaaris Kalash Criminel. Tickets d’or. Editions bonus 93.">
+    <meta name="Keywords" content="C’est nous les O.G, Les abymes, Tu dois des sous, Tchalla, Sur le banc, Shooter, Angle mort, Apoclypse feat.Freeze Corleone, Goudronné, King Von, BBL, Balistique, Tous les jours, Barillet, Fiché S,">
+    <meta name="Subject" content="Musique - Album">
+    <meta name="Revisit-After" content="10 days">
+    <meta name="Robots" content="all">
+    <meta name="Rating" content="general">
+
+    <!-- Mes styles CSS -->
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/tracklist.css">
+    <link rel="stylesheet" href="./css/effet.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Les icons -->
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.2/jquery.min.js" integrity="sha512-poSrvjfoBHxVw5Q2awEsya5daC0p00C8SKN74aVJrs7XLeZAi+3+13ahRhHm8zdAFbI2+/SUIrKYLvGBJf9H3A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Mes Scripts -->
+    <script src="./js/track.js" defer></script>
+
+    <!-- Le Titre -->
+    <title>SVR</title>
+</head>
+<body>
+  <header class="shapedividers_com-9462">
+    <section class="showcase" id="showcase">
+        <div class="video-container">
+            <video id="myVideo" src="./videos/animation.mp4" poster="./img/poster-hero.PNG" autoplay muted loop>
+            </video>
+        </div>
+        <div class="content">
+            <h1>SVR</h1>
+            <h3>NOUVEL ALBUM</h3>
+            <button class="btn"><a href="#svr">DÉCOUVRIR</a></button>
+        </div>
+    </section>
+  </header>
+
+  <main>
+    <!-- La section Cover et information --> 
+      <section class="SVR" id="svr">
+        <div class="max-width">
+          <!-- Navigation pour Desktop -->
+          <nav id="desktop_nav">
+            <ul class="menu_desktop">
+              <li><a href="./pages/evenements.html">ÉVÉNEMENTS</a></li>
+              <li id="logo"><a href="./index.html"><img class="logo" src="./img/logo.png" alt="logo"></a></li>
+              <li><a href="./pages/informations.html">INFORMATIONS</a></li>
+            </ul>
+          </nav>
+          <!-- Navigation floatante -->
+          <div class="navigation">
+            <input type="checkbox" class="navigationCheckbox" id="navi">
+            <label for="navi" class="navigationBtn">
+                <span class="navigationIcon">&nbsp;</span>
+            </label>
+            <div class="navigationBg">&nbsp;</div>
+            <nav class="nav">
+                <ul class="navigationListe">
+                    <li class="navigationItem"><a href="./index.html" class="liens">HOME</a></li>
+                    <li class="navigationItem"><a href="./pages/evenements.html" class="liens">ÉVÉNEMENTS</a></li>
+                    <li class="navigationItem"><a href="./pages/informations.html" class="liens">INFORMATIONS</a></li>
+                </ul>
+            </nav>
+        </div>    
+          <article class="infos">
+            <div class="infos-description" data-aos="fade-up">
+              <h1>SVR</h1>
+              <p><strong>« SVR » pour Sevran.</strong> Kaaris et Kalash Criminel jouent à domicile et unissent leurs forces sur un album brut où l’engagement occupe une place centrale.</p>
+              <br>
+              <p>Les deux titans déroulent un <strong>rap sombre et incisif</strong>  dont les lyrics sont soulignées par des instrus trap et drill.</p>
+            </div>
+            
+            <figure class="cover" data-aos="fade-up" data-aos-delay="500">
+              <img src="./img/cover+disque.png" alt="cover">
+            </figure>
+          </article>
+  
+          <button class="svrBtn"><a href="#">PLUS D'INFORMATION</a></button>
+        </div>
+      </section>
+      
+
+      <!--******************* La tracklist *********************-->
+      <section class="tracklist shapedividers_com-3695">
+        <div class="max-width">
+          <h1 class="tracklist-title">TRACKLIST</h1>
+          <div class="track" data-aos="fade-up" data-aos-delay="500">
+            <ul id="playlist">
+              <li class="active"><a href="./audio/Angle mort.mp3">ANGLE MORT</a></li>
+              <li><a href="./audio/Apocalypse.mp3">APOCALYPSE</a></li>
+              <li><a href="./audio/Balistique.mp3">BALISTE</a></li>
+              <li><a href="./audio/Barillet.mp3">BARILET</a></li>
+              <li><a href="./audio/BBL.mp3">BBL</a></li>
+              <li><a href="./audio/C_est nous les OG.mp3">C'EST NOUS LES O.G</a></li>
+              <li><a href="./audio/Fiché s.mp3">FICHÉ S</a></li>
+              <li><a href="./audio/Goudronné.mp3">GOURDRONNÉ</a></li>
+              <li><a href="./audio/King Von.mp3">KING VON</a></li>
+              <li><a href="./audio/Les abymes.mp3">LES ABYMES</a></li>
+              <li><a href="./audio/Shooter.mp3">SHOOTER</a></li>
+              <li><a href="./audio/Sur le banc.mp3">SUR LE BANC</a></li>
+          </ul>      
+          <audio id="audio" preload="auto" tabindex="0" controls="" type="audio/mpeg">
+            <source type="audio/mp3" src="./audio/C_est nous les OG.mp3">
+            Sorry, your browser does not support HTML5 audio.
+        </audio> 
+          </div>
+       
+        </div>
+      </section>
+      <!--************* LES PACKS **************-->
+      <section class="packs">
+        <div class="max-width">
+          <h1 class="packs-title">PACKS DISPONIBLES</h1>
+          <article class="infos packs_x" data-aos="fade-up">
+            <figure class="cover">
+              <img src="./img/cover+tickets.png" alt="cover">
+            </figure>
+
+            <div class="infos-description packs-infos" data-aos="fade-up" data-aos-delay="500">
+              <h1>ÉDITION PREMIUM</h1>
+              <p>Grâce à l’édition Prénium </p> <p> Album + 2 places de concert</p>
+              <button class="packBtn"><a href="https://www.fnac.com/a16457680/Kaaris-SVR-CD-album" target="_blank">ACCÈS BOUTIQUE</a></button>
+            </div>
+          </article>
+          <article class="infos packs_x" data-aos="fade-up" data-aos-delay="500">
+            <div class="infos-description packs-infos packs-2">
+              <h1>ÉDITION 93</h1>
+              <p>Découvre une édition spéciale dans 4 villes qui représentent le 93</p>
+              <br> 
+              <p>Album + feat exclusif</p>
+              <button class="packBtn"><a href="https://www.fnac.com/a16457680/Kaaris-SVR-CD-album" target="_blank">ACCÈS BOUTIQUE</a></button>
+            </div>
+            <figure class="cover" data-aos="fade-up">
+              <img src="./img/groupe album.png" alt="cover">
+            </figure>
+          </article>
+        </div>
+      </section>
+
+      <section class="social">
+        <div class="max-width">
+          <h1 class="social-title">RÉSEAUX SOCIAUX</h1>
+          <div class="social-container">
+            <div class="grayscale social-kaaris" data-aos="fade-up"><a href="https://twitter.com/KaarisOfficiel1" target="_blank"><img src="./img/kaaris.png" alt="kaaris"></a></div>
+            <div class="grayscale social-both" data-aos="fade-up" data-aos-delay="500"><a href="https://www.instagram.com/svr_kaaris_kalash_criminel/" target="_blank"><img src="./img/kaariskalashcriminel.png" alt="kaaris&kalash"></a></div>
+            <div class="grayscale social-kalash" data-aos="fade-up" data-aos-delay="1000"><a href="https://twitter.com/KalashCriminel" target="_blank"><img src="./img/kalash.png" alt="kalash"></a></div>
+            
+          </div>
+        </div>
+      </section>
+  </main>
+  <!-- **************FOOTER********* -->
+  <footer>
+    <div class="footer-max-width">
+      <div class="footer-contenu">
+      <h1 class="footer-h1" >SVR</h1>
+      <div class="box-flex">
+        <div class="footer-box box-1">
+          <h2>NEWSLETTER</h2>
+          <p>Reste informé de l'actualité de "SVR"</p>
+          <form>
+            <input type="email" id="email" placeholder="votre email" size="30" required>
+            <input type="submit" name="" id="send">
+          </form>
+        </div>
+
+        <div class="footer-box box-2">
+          <h2>NAVIGATION</h2>
+          <ul>
+            <li><a href="./index.html">HOME</a></li>
+            <li><a href="./pages/evenements.html">Évènements</a></li>
+            <li><a href="./pages/informations.html">Informations</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-box box-3">
+          <h2>RÉSEAUX</h2>
+          <ul>
+            <li><a href="https://www.instagram.com/svr_kaaris_kalash_criminel/" target="_blank">Instagram</a></li>
+            <li><a href="https://twitter.com/KaarisOfficiel1" target="_blank">Twitter</a></li>
+          </ul>
+        </div>
+      </div>
+      </div>
+
+      <div class="mention">
+        <img src="./img/logo.png" alt="logo" width="200px">
+        <p>SITE WEB DU GROUPE A POUR L'ECOLE MULTIMÉDIA</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>

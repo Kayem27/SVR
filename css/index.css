@@ -1,0 +1,512 @@
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	text-decoration: none
+}
+
+html{
+	scroll-behavior: smooth;
+}
+body {
+	font-family: 'Monument Extended';
+	line-height: 1.5;
+}
+
+a {
+	text-decoration: none;
+}
+
+section {
+	padding: 50px 0
+}
+button{
+	border: none;
+}
+.max-width {
+	max-width: 1300px;
+	padding: 0 80px;
+	margin: auto
+}
+
+/* La Vidéo */
+.mtz-download-btn{
+    display: none;
+}
+
+.showcase {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	color: #fff;
+	padding: 0 20px;
+}
+
+.video-container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.video-container video {
+	min-width: 100%;
+	min-height: 100%;
+  	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	object-fit: cover;
+}
+
+.video-container:after {
+	content: '';
+	z-index: 1;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.4);
+	position: absolute;
+}
+
+/* Le contenu au dessus de la vidéo */
+
+.content {
+	z-index: 2;
+	text-align: center;
+	text-transform: uppercase;
+}
+.content h1 {
+	font-weight: 800;
+	font-size: 128px;
+	line-height: 154px;
+	/* margin-bottom: 15px; */
+	
+}
+.content h3{
+	font-weight: 400;
+	font-size: 32px;
+	line-height: 38px;
+}
+
+.btn {
+	display: inline-block;
+	padding: 10px 30px;
+	margin-top: 25px;
+	width: 252px;
+	height: 49px;
+	left: 594px;
+	top: 556px;
+	background: #FFFFFF;
+	border-radius: 36px;
+}
+
+.btn a {
+	font-weight: 400;
+	font-size: 22px;
+	line-height: 26px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #000000;
+}
+
+.btn:hover {
+	transform: scale(1.1);
+}
+
+/* Le main */
+
+.infos{
+	display: flex;
+	/* margin-top: 10px; */
+}
+.infos-description{
+	/* border: 1px solid black; */
+	/* font-weight: 800;
+	font-size: 24px;
+	line-height: 22px; */
+	text-align: center;
+	width: 50%;
+	margin-left: 15px;
+}
+
+.infos-description p {
+	font-style: normal;
+	font-weight: 800;
+	font-size: 18px;
+	line-height: 22px;
+	text-align: center;
+}
+.infos-description p strong{
+	font-style: oblique;
+}
+/* .infos img{
+	width: 50%;
+} */
+.infos-description h1{
+	font-weight: 800;
+	font-size: 128px;
+	line-height: 154px;
+}
+
+.cover{
+	width: 608px;
+	height: 386.83px;
+	/* background-color: blue; */
+	margin-left: 70px;
+}
+.cover img{
+	width: 100%;
+	height: 100%;
+}
+
+
+/* Bouton */
+
+.SVR{
+	text-align: center;
+	border-image-source: url('../img/cover+disque.png');
+	
+}
+.svrBtn{
+	position: relative;
+	top: 30px;
+	width: 410px;
+	height: 49px;
+	background: #000000;
+	border-radius: 36px;
+	transition: all 0.2s ease;
+}
+.svrBtn a {
+	font-weight: 400;
+	font-size: 22px;
+	line-height: 26px;
+	text-align: center;
+	text-transform: uppercase;
+
+	color: #FFFFFF;
+}
+.svrBtn:hover{
+	transform: scale(1.1);
+}
+/************* SECTION PACKS********** */
+
+.packs{
+	background-color: black;
+	border: none;
+}
+
+.packs-title{
+	font-weight: 800;
+	font-size: 60px;
+	line-height: 72px;
+	text-align: center;
+	color: white;
+}
+
+.packs-infos{
+	color: white;
+}
+.packs-infos h1{
+	font-family: 'Monument Extended';
+	font-style: normal;
+	font-weight: 800;
+	font-size: 32px;
+	line-height: 38px;
+	text-align: center;
+	text-transform: uppercase;
+
+	color: #FFFFFF;
+}
+.packs-infos p {
+	margin-top: 15px;
+}
+.packs_x{
+	margin-top: 40px;
+}
+.packBtn{
+	width: 290px;
+	height: 49px;
+	background: #FFFFFF;
+	border-radius: 36px;
+	position: relative;
+	top: 50px;
+}
+.packBtn a {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 22px;
+	line-height: 26px;
+	text-align: center;
+	color: #000000;
+	transition: all 0.2s ease;
+}
+.packBtn:hover{
+	transform: scale(1.1);
+}
+
+.social{
+	background-color: black;
+	border: none;
+}
+.social-title{
+	font-weight: 800;
+	font-size: 60px;
+	line-height: 72px;
+
+	text-align: center;
+	text-transform: uppercase;
+
+	color: #FFFFFF;
+}
+
+.social-container{
+	/* width: 100vh; */
+	height: auto;
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+
+}
+.social-container div{
+	width: 33%;
+	margin-left: 20px;
+}
+.social-container div a img{
+	width: 100%;
+}
+
+ /* Noir et blanc*/
+ .grayscale{
+	 position: relative;
+ }
+ 
+.grayscale img{
+	filter: grayscale(100%);
+	transition: 0.3s ease-in-out;
+}
+.grayscale img:hover{
+	filter: grayscale(0);
+}
+
+.social-kaaris::after, .social-kalash::after{
+	content: url("../img/twitter.svg");
+	position: absolute;
+	top: 30%;
+	z-index: 7;
+	left: 40%;
+	width: 4rem;	
+	cursor: pointer;
+	display: block;
+	color: white;
+}
+.social-both::after{
+	content: url("../img/instagram-brands.svg");
+	position: absolute;
+	top: 30%;
+	z-index: 7;
+	left: 40%;
+	width: 4rem;	
+	cursor: pointer;
+	display: block;
+	color: white;
+}
+.grayscale:hover .social-kaaris::after{
+	display: none;
+}
+
+/* *************LE FOOTER */
+footer{
+	background-color: black;
+}
+.footer-max-width{
+	max-width: 1300px;
+	padding: 0 15px;
+	margin: auto
+}
+.footer-h1{
+	font-weight: 800;
+	font-size: 62.3377px;
+	line-height: 75px;
+
+	text-align: center;
+	text-transform: uppercase;
+
+	color: #FFFFFF;
+}
+.footer-contenu{
+	background-color: black;
+	border: 2px solid white;
+	/* display: flex; */
+}
+.box-flex{
+	display: flex;
+	margin-top: 20px;
+	margin-left: 10%;
+}
+.footer-box{
+	width: 33%;
+}
+.footer-box h2{
+	font-weight: 800;
+	font-size: 18px;
+	line-height: 22px;
+	/* text-align: center; */
+	text-transform: uppercase;
+
+	color: #FFFFFF;
+	margin-bottom: 50px;
+}
+.footer-box ul li{
+	margin-bottom: 10px;
+}
+.footer-box ul li a{
+	opacity: 0.8;
+}
+.footer-box ul li:hover a{
+	opacity: 1;
+}
+.footer-box p, .footer-box ul li a{
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 19px;
+
+	color: #FFFFFF;
+}
+
+.box-1 form input[type="email"]{
+	height: 30px;
+	background-color: aliceblue;
+	border: none;
+	margin-top: 10px;
+}
+.box-1 form input[type="submit"]{
+	border: 1px solid white;
+	height: 30px;
+	width: 100px;
+	margin-top: 10px;
+	cursor: pointer;
+	color: white;
+	background-color: #000000;
+}
+.box-1 form input[type="submit"]:hover{
+	transform: scale(0.9);
+}
+.mention{
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 10px;
+}
+.mention img{
+	width: 60px;
+}
+.mention p {
+	font-weight: 400;
+	font-size: 9px;
+	line-height: 10px;
+	/* identical to box height */
+
+	text-align: center;
+	text-transform: uppercase;
+}
+/******** Responsive ***********/
+/* *****************************************************/
+@media (max-width : 940px){
+	.infos{
+		flex-wrap: wrap;
+	}
+	.infos-description{
+		width: 100%;
+		margin-bottom: 15px;
+	}
+	.cover{
+		margin-left: 0;
+		height: auto;
+		margin-top: 40px;
+	}
+	.box-flex{
+		flex-direction: column;
+		
+	}
+	.footer-box{
+		margin-bottom: 20px;
+	}
+	.packs-2{
+		order: 2;
+	}
+}
+
+@media (max-width : 490px){
+	.max-width{
+		padding: 0 50px;
+	}
+	.svrBtn{
+		width: 300px;
+	}
+	.cover{
+		margin-left: 0;
+		height: auto;
+	}
+	.infos-description{
+		margin-left: 0;
+	}
+}
+
+@media (max-width:500px) {
+	.navigation{
+		visibility: visible;
+	}
+}
+
+@media (max-width : 460px){
+	#desktop_nav{
+		display: none;
+	}
+	.navigation{
+		visibility: visible;
+	}
+	/* #logo{
+		margin-bottom: 30px;
+	}
+	nav ul {
+		align-items: flex-end;
+	}
+	nav ul li a {
+		margin-right: -54px;
+	} */
+	/* .mobile_menu{
+		display: block;
+	} */
+	.svrBtn{
+		width: 200px;
+	}
+	.svrBtn a {
+		font-size: 16px;
+	}
+	.tracklist-title{
+		font-size: 35px;
+	}
+	.packs-title{
+		font-size: 36px;
+	}
+}
+
+/* Bonus animation */
+.reveal{
+	opacity: 0;
+	transform: translateY(30px);
+}
+.reveal-visible{
+	opacity: 1;
+	transform: translateY(0);
+	transition: 1s cubic-bezier(.5, 0, 0, 1);
+}

@@ -1,0 +1,65 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+.tracklist{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}
+
+.tracklist-title{
+    font-style: normal;
+    font-weight: 800;
+    font-size: 55px;
+    line-height: 72px;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    margin-top: 30px;
+}
+
+/* /////////////////////// */
+/* #playlist,audio{background:#666;width:400px;padding:20px;} */
+.active a{color:#5DB0E6;text-decoration:none;}
+/* li a{color:#eeeedd;background:#333;padding:5px;display:block;} */
+/* li a:hover{text-decoration:none;} */
+
+#playlist, audio{
+  background: white;
+  width: 100%;
+  padding: 20px;
+  list-style: none;
+}
+#playlist{
+  overflow-y: scroll;
+  height: auto;
+}
+#playlist li a{
+  display: block;
+  font-family: 'Monument Extended';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+
+  color: #000000;
+}
+.active a {
+  color: orange;
+}
+.active li{
+  background-color: black;
+}
+#playlist li{
+  display: block;
+  transition: all 0.3s ease-out;
+  height: 35px;
+}
+#playlist li:hover{
+  background-color: black;
+}
+#playlist li:hover a {
+  color: white;
+}
+audio{
+  border: 1px solid black;
+}

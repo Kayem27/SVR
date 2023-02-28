@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!-- Les métas -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="Un site internet évènementiel pour l’album commun SVR de Kaaris et Kalash Criminel. SVR est un diminutif de SEVRAN, ville du 93. SVR tour : Tournée dans toute la France. Place de concert Kaaris Kalash Criminel. Tickets d’or. Editions bonus 93.">
+    <meta name="Keywords" content="C’est nous les O.G, Les abymes, Tu dois des sous, Tchalla, Sur le banc, Shooter, Angle mort, Apoclypse feat.Freeze Corleone, Goudronné, King Von, BBL, Balistique, Tous les jours, Barillet, Fiché S,">
+    <meta name="Subject" content="Musique - Album">
+    <meta name="Revisit-After" content="10 days">
+    <meta name="Robots" content="all">
+    <meta name="Rating" content="general">
+
+    <!-- Mes styles CSS -->
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/effet.css">
+    <link rel="stylesheet" href="../css/evenements.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js" defer></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js" defer></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js" defer></script>
+
+    <!-- Mes Scripts -->
+    <script src="../js/app.js" type="module" defer></script>
+    
+    <title>SVR-Evenements</title>
+</head>
+<body>
+    <header class="shapedividers_com-9462">
+        <div class="header-hero">
+            <h1>ÉVÉNEMENTS</h1>
+            <button class="btn"><a href="#svr">DÉCOUVRIR</a></button>
+        </div>
+    </header>
+
+    <main>
+        <!-- La section Cover et information -->
+      <section class="SVR" id="svr">
+        <div class="max-width">
+         <!-- Navigation pour Desktop -->
+         <nav id="desktop_nav">
+          <ul class="menu_desktop">
+            <li><a href="./evenements.html">ÉVÉNEMENTS</a></li>
+            <li id="logo"><a href="../index.html"><img class="logo" src="../img/logo.png" alt="logo"></a></li>
+            <li><a href="./informations.html">INFORMATIONS</a></li>
+          </ul>
+        </nav>
+        <!-- Navigation floatante -->
+        <div class="navigation">
+          <input type="checkbox" class="navigationCheckbox" id="navi">
+          <label for="navi" class="navigationBtn">
+              <span class="navigationIcon">&nbsp;</span>
+          </label>
+          <div class="navigationBg">&nbsp;</div>
+          <nav class="nav">
+              <ul class="navigationListe">
+                  <li class="navigationItem"><a href="../index.html" class="liens">HOME</a></li>
+                  <li class="navigationItem"><a href="./evenements.html" class="liens">ÉVÉNEMENTS</a></li>
+                  <li class="navigationItem"><a href="./informations.html" class="liens">INFORMATIONS</a></li>
+              </ul>
+          </nav>
+      </div>
+          <article class="infos">
+            <div class="infos-description" data-aos="fade-up">
+              <h1>TICKETS</h1>
+              <p><strong>En précommandant l’album,</strong>  participe au jeu concours et tente ta chance de trouver l’un des 10 tickets d’or (2X5) et d’accéder en VIP aux répétitions et à la fosse d’or lors du concert à Bercy.</p>
+              <br>
+              <p>Retrouve plus d’information sur le compte instagram : SVR_Kaaris_Kalash_Criminel</p>
+            </div>
+  
+            <figure class="cover" data-aos="fade-up" data-aos-delay="500">
+              <img src="../img/tickets rognés.png" alt="tickets">
+            </figure>
+          </article>
+  
+          <button class="svrBtn"><a href="#">PRÉCOMMANDER</a></button>
+        </div>
+      </section>
+
+      <section class="sectionTournee shapedividers_com-3695">
+        <div class="max-width">
+            <div class="sectionTournee-contenu">
+                <h1>TOURNÉE SVR</h1>
+                <h2>DATES EXPLUSIVES</h2>
+            <div class="tableau">
+              <div class="box" style="overflow-x:auto;">
+                <table id="concert">
+                  <tr>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                  </tr>
+                  <tr>
+                    <td class="date">15/04</td>
+                    <td class="ville">PARIS</td>
+                    <td class="lieu">BERCY</td>
+                    <td></td>
+                    <td><button class="reserveBtn"><a href="#">RÉSERVER</a></button></td>
+                  </tr>
+                  <tr>
+                    <td class="date">10/06</td>
+                    <td class="ville">LYON</td>
+                    <td class="lieu">HALL TONY GAMER</td>
+                    <td></td>
+                    <td><button class="reserveBtn"><a href="#">RÉSERVER</a></button></td>
+                  </tr>
+                  <tr>
+                    <td class="date">11/06</td>
+                    <td class="ville">NICE</td>
+                    <td class="lieu">PALAIS NIKAIA</td>
+                    <td class="tickets"></td>
+                    <td><button class="reserveBtn"><a href="#">RÉSERVER</a></button></td>
+                  </tr>
+                  <tr>
+                    <td class="date">13/06</td>
+                    <td class="ville">DIJON</td>
+                    <td class="lieu">ZÉNITH</td>
+                    <td class="tickets"></td>
+                    <td><button class="reserveBtn"><a href="#">RÉSERVER</a></button></td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            </div>
+
+        </div>
+      </section>
+      </main>
+       <!-- **************FOOTER********* -->
+  <footer>
+    <div class="footer-max-width">
+      <div class="footer-contenu">
+      <h1 class="footer-h1" >SVR</h1>
+      <div class="box-flex">
+        <div class="footer-box box-1">
+          <h2>NEWSLETTER</h2>
+          <p>Reste informé de l'actualité de "SVR"</p>
+          <form>
+            <input type="email" id="email" placeholder="votre email" size="30" required>
+            <input type="submit" name="" id="send">
+          </form>
+        </div>
+
+        <div class="footer-box box-2">
+          <h2>NAVIGATION</h2>
+          <ul>
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="./evenements.html">Évènements</a></li>
+            <li><a href="./informations.html">Informations</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-box box-3">
+          <h2>RÉSEAUX</h2>
+          <ul>
+            <li><a href="https://www.instagram.com/svr_kaaris_kalash_criminel/" target="_blank">Instagram</a></li>
+            <li><a href="https://twitter.com/KaarisOfficiel1" target="_blank">Twitter</a></li>
+          </ul>
+        </div>
+      </div>
+      </div>
+
+      <div class="mention">
+        <img src="../img/logo.png" alt="logo" width="200px">
+        <p>SITE WEB DU GROUPE A POUR L'ECOLE MULTIMÉDIA</p>
+      </div>
+    </div>
+  </footer>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
